@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -14,27 +14,43 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstHomework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60R-Su-deB">
-                                <rect key="frame" x="87" y="149" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="So9-ow-sAs" userLabel="Green View">
+                                <rect key="frame" x="64" y="219.5" width="768" height="161.5"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60R-Su-deB" userLabel="Red View">
+                                <rect key="frame" x="64" y="14" width="768" height="161.5"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="60R-Su-deB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B0n-bE-Max"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="So9-ow-sAs" secondAttribute="trailing" constant="20" id="TUS-Hv-73X"/>
+                            <constraint firstItem="60R-Su-deB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="WOv-4u-o05"/>
+                            <constraint firstItem="So9-ow-sAs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cgq-qR-Q6Y"/>
+                            <constraint firstItem="So9-ow-sAs" firstAttribute="top" secondItem="60R-Su-deB" secondAttribute="bottom" constant="44" id="h8X-Qi-qEI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="So9-ow-sAs" secondAttribute="bottom" constant="12" id="uSi-8J-OiH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="60R-Su-deB" secondAttribute="trailing" constant="20" id="wAG-JO-Ixj"/>
+                            <constraint firstItem="So9-ow-sAs" firstAttribute="height" secondItem="60R-Su-deB" secondAttribute="height" id="zEs-Wj-lP6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="84"/>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
